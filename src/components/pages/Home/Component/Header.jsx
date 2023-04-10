@@ -11,7 +11,6 @@ const Header = () => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setProfileImg(data.results.map((dt) => dt.urls.small));
         setRandomIndex(Math.floor(Math.random() * data.results.length));
       });

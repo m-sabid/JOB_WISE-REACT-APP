@@ -27,13 +27,13 @@ const Nav = () => {
         </div>
         <div className="menus">
           <ul className="flex justify-around items-center">
-            {navItems.map((navItem) => {
+            {navItems.map((navItem, index) => {
               return (
-                <>
+                <div key={index}>
                   <li className="mx-3 text-gray-700 font-semibold">
                     <Link to={navItem.path}>{navItem.navName}</Link>
                   </li>
-                </>
+                </div>
               );
             })}
           </ul>
