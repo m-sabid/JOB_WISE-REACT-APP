@@ -21,7 +21,7 @@ const Nav = () => {
     <>
       <nav className="mb-5 border-gray-200 py-5 flex justify-between items-center">
         <div className="logo">
-          <Link to={"/"} className="text-3xl font-bold">
+          <Link to={"/"} className="text-2xl font-bold">
             JOB_WISE
           </Link>
         </div>

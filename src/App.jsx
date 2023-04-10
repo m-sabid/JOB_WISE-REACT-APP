@@ -1,12 +1,12 @@
 import { useState } from "react";
+import Home from "./components/pages/Home/Home";
 import Nav from "./components/shared/nav/Nav";
 
 function App() {
-
   return (
     <>
       <Nav />
-      <h1>Home</h1>
+      <Home />
     </>
   );
 }
