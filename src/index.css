@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    width: 80%;
-    margin: auto;
+* {
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.my-container {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+  min-height: 60vh;
 }
