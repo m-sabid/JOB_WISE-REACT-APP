@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
+import AppHeader from "../../shared/AppHeader";
 import Footer from "../../shared/footer/Footer";
 import Nav from "../../shared/nav/Nav";
 import JDDescription from "./component/JDDescription";
 import JDDetails from "./component/JDDetails";
-import JDHeader from "./component/JDHeader";
 
 const JobDetails = () => {
   const { id } = useParams();
@@ -29,7 +29,7 @@ const JobDetails = () => {
       <div className="my-container">
         <Nav />
         {/* Header */}
-        <JDHeader />
+        <AppHeader title="Job Details" />
         {/* Details */}
         <div className="grid grid-cols-6 gap-4 ">
           <JDDescription job={job} />
