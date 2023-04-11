@@ -4,6 +4,8 @@ import App from "./App";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import JobDetails from "./components/pages/JobDetails/JobDetails";
+import "react-toastify/dist/ReactToastify.css";
+import AppliedJobs from "./components/pages/AppliedJobs/AppliedJobs";
 
 const router = createBrowserRouter([
   {
@@ -20,7 +22,7 @@ const router = createBrowserRouter([
   },
   {
     path: "applied-jobs",
-    element: <App />,
+    element: <AppliedJobs />,
   },
   {
     path: "blog",
