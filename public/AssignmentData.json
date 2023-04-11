@@ -1,0 +1,42 @@
+[
+  {
+    "assId": "ass_1",
+    "assName": "Assignment 1",
+    "assNumber": 60
+  },
+  {
+    "assId": "ass_2",
+    "assName": "Assignment 2",
+    "assNumber": 60
+  },
+  {
+    "assId": "ass_3",
+    "assName": "Assignment 3",
+    "assNumber": 54
+  },
+  {
+    "assId": "ass_4",
+    "assName": "Assignment 4",
+    "assNumber": 50
+  },
+  {
+    "assId": "ass_5",
+    "assName": "Assignment 5",
+    "assNumber": 57
+  },
+  {
+    "assId": "ass_6",
+    "assName": "Assignment 6",
+    "assNumber": 49
+  },
+  {
+    "assId": "ass_7",
+    "assName": "Assignment 7",
+    "assNumber": 60
+  },
+  {
+    "assId": "ass_8",
+    "assName": "Assignment 8",
+    "assNumber": 60
+  }
+]

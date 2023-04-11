@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import JobDetails from "./components/pages/JobDetails/JobDetails";
 import "react-toastify/dist/ReactToastify.css";
 import AppliedJobs from "./components/pages/AppliedJobs/AppliedJobs";
+import Statistics from "./components/pages/Statistics/Statistics";
+import Blogs from "./components/pages/Blogs/Blogs";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +20,7 @@ const router = createBrowserRouter([
   },
   {
     path: "statistics",
-    element: <App />,
+    element: <Statistics />,
   },
   {
     path: "applied-jobs",
@@ -26,7 +28,7 @@ const router = createBrowserRouter([
   },
   {
     path: "blog",
-    element: <App />,
+    element: <Blogs />,
   },
 ]);
 
