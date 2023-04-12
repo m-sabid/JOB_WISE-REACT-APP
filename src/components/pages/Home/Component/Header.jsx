@@ -15,15 +15,16 @@ const Header = () => {
         setRandomIndex(Math.floor(Math.random() * data.results.length));
       });
   }, []);
+
   return (
     <>
-      <div className="header flex justify-between items-center max-h-[32rem] min-h-[32rem]   overflow-hidden">
-        <div className="w-1/2">
-          <h1 className="text-5xl font-bold leading-tight">
+      <div className="header flex flex-col md:flex-row justify-between items-center md:max-h-[32rem] max-h-full md:min-h-[32rem] overflow-hidden">
+        <div className="w-full md:w-1/2">
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
             Connecting <br /> You to your <br />
             <span className="text-blue-500"> Dream career. </span>
           </h1>
-          <p className="my-5 w-3/4">
+          <p className="my-5 w-full md:w-3/4">
             Find your dream career with ease through our extensive job database
             and user-friendly platform. Your perfect job is just a click away on
             our job portal website.
@@ -32,7 +33,7 @@ const Header = () => {
             Get Started
           </button>
         </div>
-        <div className="w-1/2 h-full">
+        <div className="w-full md:w-1/2 bg-red-600 mt-10">
           <img
             src={profileImg[randomIndex]}
             alt="Profile image"

@@ -35,7 +35,7 @@ const JobCart = ({job}) => {
       </div>
       <div className="col-span-1 sm:col-span-1">
         <Link
-          to={`/details/${job.id}`}
+          to={`/${job.id}`}
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md"
         >
           View Details

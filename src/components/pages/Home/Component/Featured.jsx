@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Featured = () => {
   const [showAll, setShowAll] = useState(false);
@@ -7,22 +7,17 @@ const Featured = () => {
 
   const slicedJobs = showAll ? jobs : jobs.slice(0, 4);
 
-  
   useEffect(() => {
     fetch("FeaturedJobs.json")
-    .then((res) => res.json())
-    .then((data) => setJobs(data));
+      .then((res) => res.json())
+      .then((data) => setJobs(data));
   }, []);
-  
-
 
   const toggleShowAll = () => {
     setShowAll(!showAll);
   };
 
-  const buttonText = showAll ? 'Show Less' : 'Show All';
-
-
+  const buttonText = showAll ? "Show Less" : "Show All";
 
   return (
     <>
@@ -31,7 +26,7 @@ const Featured = () => {
         <p>Hand-picked "Featured Jobs" for exciting career opportunities.</p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 my-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 my-10">
         {slicedJobs.map((job) => {
           return (
             <div key={job.id} className="border-2 p-5 rounded-md">
@@ -68,7 +63,10 @@ const Featured = () => {
                 />
                 <p> {job.salaryRange}</p>
               </div>
-              <Link to={`/${job.id}`} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded-md">
+              <Link
+                to={`/${job.id}`}
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded-md"
+              >
                 View Details
               </Link>
             </div>
@@ -76,7 +74,10 @@ const Featured = () => {
         })}
       </div>
       <div className="text-center">
-        <button onClick={toggleShowAll} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">
+        <button
+          onClick={toggleShowAll}
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md"
+        >
           {buttonText}
         </button>
       </div>

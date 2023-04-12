@@ -31,15 +31,15 @@ const Category = () => {
           portal website.
         </p>
       </div>
-      <div className="flex justify-around items-center my-5">
+      <div className="flex flex-col sm:flex-row justify-around items-center my-5">
         {data.map((dt, index) => {
           return (
-            <div key={index} className="p-5 rounded-md bg-gray-50">
-              <img src={dt.categoryImage} alt="" className="w-12 bg-gray-100 p-2 rounded-md" />
-              <p>
+            <div key={index} className="p-5 rounded-md bg-gray-50 my-2 w-full sm:my-0 sm:mx-2">
+              <img src={dt.categoryImage} alt="" className="w-12 bg-gray-100 p-2 rounded-md mb-2" />
+              <p className="text-left">
                 <strong>{dt.categoryName}</strong>
               </p>
-              <p>
+              <p className="text-left">
                 <small>{dt.availableJobs}</small>
               </p>
             </div>
