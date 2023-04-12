@@ -10,15 +10,15 @@ import JDDetails from "./component/JDDetails";
 const JobDetails = () => {
   const { id } = useParams();
 
-  const [jobs, setJobs] = useState([]);
+  const [jobDetails, setJobDetails] = useState([]);
 
   useEffect(() => {
-    fetch("../../../../public/FeaturedJobs.json")
+    fetch(`FeaturedJobs.json`)
       .then((res) => res.json())
-      .then((data) => setJobs(data));
+      .then((data) => setJobDetails(data));
   }, []);
 
-  const job = jobs.find((p) => p.id === id);
+  const job = jobDetails.find((p) => p.id === id);
 
   if (!job) {
     return <div>Product not found</div>;

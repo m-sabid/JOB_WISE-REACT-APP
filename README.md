@@ -1,6 +1,6 @@
 ---
 
-# The Job Protal Website 📝
+# The Job Portal Website 📝
 
 In this project, I use `React`, `Tailwind CSS`,
 and `Vite` to build a Job Portal. The portal
@@ -12,6 +12,9 @@ simplifies styling and allows for easy
 customization. Vite is used as a build tool to
 optimize the project's performance and speed up
 development.
+
+## Live Site URL: 
+https://job-wise.netlify.app/
 
 ## Started With This Project 🚀
 
