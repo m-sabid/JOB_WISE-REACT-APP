@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import AppHeader from "../../shared/AppHeader";
 import Footer from "../../shared/footer/Footer";
@@ -21,7 +21,12 @@ const JobDetails = () => {
   const job = jobDetails.find((p) => p.id === id);
 
   if (!job) {
-    return <div>Product not found</div>;
+    return (
+      <div className="text-center min-h-[100vh] flex flex-col gap-6 justify-center items-center">
+        <h1 className="text-4xl">Page not found ...</h1>
+        <Link to={'/'} className="text-2xl text-blue-500">Back to home</Link>
+      </div>
+    );
   }
 
   return (

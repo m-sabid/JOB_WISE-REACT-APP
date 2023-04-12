@@ -8,6 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 import AppliedJobs from "./components/pages/AppliedJobs/AppliedJobs";
 import Statistics from "./components/pages/Statistics/Statistics";
 import Blogs from "./components/pages/Blogs/Blogs";
+import NotFound from "./components/pages/404";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/:id",
-    element: <JobDetails />,    
+    element: <JobDetails />,
   },
   {
     path: "statistics",
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "blog",
     element: <Blogs />,
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 
