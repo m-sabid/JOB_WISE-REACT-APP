@@ -27,10 +27,11 @@ development experience!😊
 
 ## Functionalities 🔥
 
-- **Home Page:** The home page is just like a landing page. It includes a section called "Featured Jobs" which displays four jobs. If a user clicks on the "see all" button, then they will be able to view all of the featured jobs.
-- **Job Details:**
-- **Applied Jobs:** The "Applied Jobs" page shows all the jobs that the user has already applied for. Additionally, there is a filter option available on this page where the user can sort their applied jobs based on job location.
-- \*\*
+- ** Home Page: ** The home page is just like a landing page. It includes a section called "Featured Jobs" which displays four jobs. If a user clicks on the "see all" button, then they will be able to view all of the featured jobs.
+- ** Job Details: ** The "Job Details" page allows users to view various details related to the job such as job description, job responsibilities, educational requirements, experiences, etc. Additionally, there is an "Apply Job" button available on this page which can be clicked to apply for the job.
+- ** Applied Jobs: ** The "Applied Jobs" page shows all the jobs that the user has already applied for. Additionally, there is a filter option available on this page where the user can sort their applied jobs based on job location.
+- ** Blog Page: ** The blog page contains various blog posts on different topics or themes, with features such as categories, tags, or search options to help users find the content they are interested in.
+- ** Statistics page: ** The Statistics page has an assignment result chart that displays student performance data in a visual format.
 
 ## In conclusion ✨
 
