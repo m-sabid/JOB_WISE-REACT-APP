@@ -27,12 +27,10 @@ development experience!😊
 
 ## Functionalities 🔥
 
-- **Job Search:** Allows job seekers to search for
-  job listings based on various criteria, such as
-  location, job type, salary range, and keywords. \* **Job Listing Creation:** Allows employers to
-  create and post job listings, specifying details
-  such as job title, description, qualifications, and
-  application instructions.
+- **Home Page:** The home page is just like a landing page. It includes a section called "Featured Jobs" which displays four jobs. If a user clicks on the "see all" button, then they will be able to view all of the featured jobs.
+- **Job Details:**
+- **Applied Jobs:** The "Applied Jobs" page shows all the jobs that the user has already applied for. Additionally, there is a filter option available on this page where the user can sort their applied jobs based on job location.
+- \*\*
 
 ## In conclusion ✨
 
